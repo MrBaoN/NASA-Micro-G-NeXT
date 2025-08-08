@@ -1,0 +1,18 @@
+PacketDetector.cpp:
+Function for chunking bits is processStream(const std::string& filename). This is the function which will be used for the project. 
+Searches for the Bit Synchronization Pattern or the Frame Synchronization Pattern in a chunk of 144 bits. If it's found it 
+currently prints out the chunk and begins the process again after the end of the next chunk (ex: If bits 1 - 144 are chunked, it 
+begins searching at bit 155). This function takes a filename as an input for the FIFO system, this can modified easily to a new 
+FIFO input if necessary. It does work if new data is added to the file while the function is running.
+
+WriteBits is a function which just adds the BSP or FSP at random to the text file. This is primarily for testing purposes to ensure
+the processStream will identify new data in the FIFO and chunk it. It should not be used in the final product.
+
+Main shows how these functions can be run, I'm unsure if it's necessary to execute them as threads. 2 lines are commented out,
+these are the creation and execution of the thread for WriteBits. If you wish to test the files you may uncomment these and
+run the file.
+
+
+fill_file.py:
+Additonally a Python file is included in this folder to preload the text file with bits and the necessary patterns, this is also
+for testing purposes.

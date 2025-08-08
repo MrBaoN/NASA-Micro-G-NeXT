@@ -1,0 +1,2 @@
+[2KDevice 'wlan0' successfully activated with '46da84ff-4b13-4d51-b24a-3504e94ed2ee'.
+Hint: "nmcli dev wifi show-password" shows the Wi-Fi name and password.

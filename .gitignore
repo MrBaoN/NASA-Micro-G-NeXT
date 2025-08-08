@@ -1,0 +1,48 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#include modules
+/MicroGNextRaphael/myenv
+/MicroGNextRaphael/__pycache__
+/MicroGNextRaphael/.pytest_cache
+/MicroGNextRaphael/.mypy_cache
+/MicroGNextRaphael/.vscode
+/MicroGNextRaphael/libiio/
+/MicroGNextRaphael/itpp-4.3.1/
+/MicroGNextRaphael/WindowsPowerShell/
+/MicroGNextRaphael/gr-reveng/
+# ignore Conda / virtualenv folders
+/MicroGNextRaphael/radioEnv/
+
+
+/BCLBranch/*

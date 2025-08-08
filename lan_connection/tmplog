@@ -1,0 +1,36 @@
+bchd read 0 bytes
+bchd read 28 bytes
+Received: 011010010010111010010101010
+
+*** Assertion failed in /home/tamug/itpp-4.3.1/itpp/base/vec.cpp on line 108:
+Vec<bin>::set(): Stream operation failed (buffer >> data) (!buffer.fail())
+Restarted PacketDetector - 76860 with new process 76880
+Error: bchdecode.cpp failed to open named pipe: No such file or directory
+Restarted MicroGNextRaphael/decoderNew.py - 76862 with new process 76882
+./centralHub.sh: line 84: 76816 Aborted                 (core dumped) ( trap - EXIT; ./bin/"$file" ${cppFileArg["$file"]} )
+Restarted bchdecode - 76816 with new process 76889
+Traceback (most recent call last):
+  File "/home/tamug/Downloads/TAMU_SA_NASA_MGN-main(1)/TAMU_SA_NASA_MGN-main/MicroGNextRaphael/decoderNew.py", line 12, in <module>
+    from gnuradio import qtgui
+ModuleNotFoundError: No module named 'gnuradio'
+^CTraceback (most recent call last):
+  File "/home/tamug/Downloads/TAMU_SA_NASA_MGN-main(1)/TAMU_SA_NASA_MGN-main/MicroGNextRaphael/code/debug_tcp.py", line 24, in <module>
+    conn, addr = sock.accept()
+                 ^^Traceback (most recent call last):
+^^^^  File "/home/tamug/Downloads/TAMU_SA_NASA_MGN-main(1)/TAMU_SA_NASA_MGN-main/KMLGen/KMLGenerator.py", line 12, in <module>
+^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 295, in accept
+    data = fifo.readline()
+           ^^^^^^^^^^^^^^^
+  File "<frozen codecs>", line 319, in decode
+KeyboardInterrupt
+    fd, addr = self._accept()
+   Terminating programs...
+Killing bchdecode - 76889
+            ^^^^^^^^^^^^^^
+KeyboardInterrupt
+Killing MicroGNextRaphael/decoderNew.py - 76882
+Killing PacketDetector - 76880
+Killing MicroGNextRaphael/code/debug_tcp.py - 76815
+Killing KMLGen/KMLGenerator.py - 76814
+Killing lan_connection/multicaster.py - 76812
