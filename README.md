@@ -1,6 +1,11 @@
 # TAMU_SA_NASA_MGN
 Texas A&M University Sea Aggies - NASA Micro-g NExT Challange
 
+# Overview of the system
+<img src="/Overview.png">
+
+# Demo
+[![Demo](Youtube_Demo.jpg)](https://youtu.be/vb0IGxfVT1s)
 # Usage
 
 Start the Raspberry Pi. After ~2 minutes, connect to the Raspberry Pi's WiFi network "t-450" with password "tamug123". On a laptop, run the python script. This will provide a GUI showing what the Pi is recieving. On a phone, connect to the network and use a VNC client app like RVNC Viewer to connect to 10.42.0.1. This will bring up the same GUI, and provide an interface to control the Pi even with the closed box. Note that this can also be done on a laptop.
